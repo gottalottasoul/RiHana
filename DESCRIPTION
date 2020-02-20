@@ -1,0 +1,17 @@
+Package: RiHana
+Type: Package
+Title: common functions used for hana analytics
+Version: 0.1.0
+Date: 2020-02-20
+Authors@R: c(person("Blake", "Abbenante", email = "blake.abbenante@yourhana.com", role = c("aut", "cre")))
+Maintainer: Blake Abbenante <blake.abbenante@yourhana.com>
+Description: R functions for analysis at hana
+License: MIT + file LICENSE
+LazyData: TRUE
+Encoding: UTF-8
+Imports:
+    dplyr
+    ,scales
+    ,RColorBrewer
+    ,lubridate
+    ,tibble
