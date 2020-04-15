@@ -231,6 +231,7 @@ get_hana_meeting_rooms <-
       " Lounge",
       "Training Room")
     
+<<<<<<< HEAD
     room_size<-c(
       "Large Conference Room ",
       "Medium Conference Room ",
@@ -270,6 +271,8 @@ get_hana_meeting_rooms <-
       "Training Room "
     )
     
+=======
+>>>>>>> 3000f3629d29b2acdbc7a245a958da5ab0c14f6f
     max_density<-c(
       16,
       7,
