@@ -231,7 +231,6 @@ get_hana_meeting_rooms <-
       " Lounge",
       "Training Room")
     
-<<<<<<< HEAD
     room_size<-c(
       "Large Conference Room ",
       "Medium Conference Room ",
@@ -271,8 +270,6 @@ get_hana_meeting_rooms <-
       "Training Room "
     )
     
-=======
->>>>>>> 3000f3629d29b2acdbc7a245a958da5ab0c14f6f
     max_density<-c(
       16,
       7,
@@ -426,7 +423,7 @@ get_hana_meeting_rooms <-
       "No")
     
     
-    hana_meeting_rooms<-data.frame(hana_location,resourceid,room_name,room_id,seating_type,room_type,max_density,sq_ftg,zoom_enabled,stringsAsFactors = FALSE)
+    hana_meeting_rooms<-data.frame(hana_location,resourceid,room_name,room_id,seating_type,room_type,room_size,max_density,sq_ftg,zoom_enabled,stringsAsFactors = FALSE)
     
     hana_meeting_rooms
     
