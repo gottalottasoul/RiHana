@@ -1,7 +1,7 @@
 get_slack_payload <- 
-function(report_name,report_url) {
-  
-  payload<-paste0('{
+function(report_name,report_url,report_updates='') {
+    
+    payload<-paste0('{
   "channel": "#insights",
   "blocks": [
     {
@@ -9,7 +9,7 @@ function(report_name,report_url) {
       "block_id": "section567",
       "text": {
         "type": "mrkdwn",
-        "text": ":carlton: \n ',report_name,' has been updated.\n <',report_url,'>"
+        "text": ":carlton: \n ',report_name,' has been updated.\n <',report_url,'>. ',report_updates,'"
       },
       "accessory": {
         "type": "image",
@@ -24,8 +24,8 @@ function(report_name,report_url) {
         {
           "type": "mrkdwn",
           "text": "*Last run*\n',
-                  lubridate::now(),
-                  '"
+                    lubridate::now(),
+                    '"
         }
       ]
     },
@@ -41,7 +41,8 @@ function(report_name,report_url) {
     }
   ]
 }')
-  
+    
   payload
-  
+    
 }
+  

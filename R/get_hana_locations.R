@@ -3,15 +3,6 @@ function()
 {
  
 #create df with open dates
-locations<-c("Dallas, TX",
-             "Irvine, CA",
-             "St. Mary Axe",
-             "Hammersmith","
-             St. Martin's Court",
-             "Philadelphia",
-             "Arlington",
-             "New York, NY",
-             "Windmill Green")
 hana_name<-c("Hana at Park District",
              "Hana at Park Place", 
              "Hana at SMA", 
@@ -21,6 +12,24 @@ hana_name<-c("Hana at Park District",
              "Hana at Crystal City",
              "Hana at WTC3",
              "Hana at Windmill Green")
+hs_locations<-c("Dallas, TX",
+           "Irvine, CA",
+           "St. Mary Axe",
+           "Hammersmith","
+           St. Martin's Court",
+           "Philadelphia",
+           "Arlington",
+           "New York, NY",
+           "Windmill Green")
+nex_locations<-c("Park District",
+                 "Park Place",
+                 "70 Saint Mary Axe",
+                 "245 Hammersmith",
+                 "NA",
+                 "NA",
+                 "NA",
+                 "NA",
+                 "NA")
 hana_region<-c("US",
                "US",
                "UK",
@@ -41,8 +50,19 @@ open_date<-c(as.Date("2019-08-22"),
              as.Date("2020-09-30")
              )
 
+unit_local_tz<-c("US/Central",
+                  "US/Pacific",
+                  "Europe/London",
+                  "Europe/London",
+                  "Europe/London",
+                  "US/Eastern",
+                  "US/Eastern",
+                  "US/Eastern",
+                  "Europe/London"
+                  )
 
-hana_locations<-data.frame(locations,hana_name,hana_region,open_date,stringsAsFactors = FALSE)
+
+hana_locations<-data.frame(hana_name,hs_locations,nex_locations,hana_region,open_date,unit_local_tz,stringsAsFactors = FALSE)
 
 hana_locations
 
