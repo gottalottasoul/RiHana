@@ -4,7 +4,7 @@ get_hana_meeting_rooms <-
     
     #create df with additional info about Meeting rooms
     
-    hana_location<-c("Park District",
+    hs_hana_location<-c("Park District",
                      "Park District",
                      "Park District",
                      "Park District",
