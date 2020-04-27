@@ -4,7 +4,7 @@ function()
  
 #create df with additional info about Meeting rooms
 
-hana_location<-c(
+  hana_unit<-c(
   "Park District",
   "Park District",
   "Park District",
@@ -754,7 +754,7 @@ max_density<-c(
 )  
   
 
-hana_suites_and_studios<-data.frame(hana_location,suite_number,suite_attributes,room_type,desk_price_asking,desk_price_valuation,rsf,usf,max_density, stringsAsFactors = FALSE)
+hana_suites_and_studios<-data.frame(hana_unit,suite_number,suite_attributes,room_type,desk_price_asking,desk_price_valuation,rsf,usf,max_density, stringsAsFactors = FALSE)
 
 hana_suites_and_studios
 

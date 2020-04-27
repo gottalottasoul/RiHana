@@ -11,20 +11,23 @@ hana_name<-c("Hana at Park District",
              "Hana at 1818 Market",
              "Hana at Crystal City",
              "Hana at WTC3",
-             "Hana at Windmill Green")
+             "Hana at Windmill Green",
+             "Hana at Stilwerk")
 hs_locations<-c("Dallas, TX",
            "Irvine, CA",
            "St. Mary Axe",
-           "Hammersmith","
-           St. Martin's Court",
+           "Hammersmith",
+           "St. Martin's Court",
            "Philadelphia",
            "Arlington",
            "New York, NY",
-           "Windmill Green")
+           "Windmill Green",
+           "Berlin_Stilwerk_KANTSTRAßE_17")
 nex_locations<-c("Park District",
                  "Park Place",
                  "70 Saint Mary Axe",
                  "245 Hammersmith",
+                 "NA",
                  "NA",
                  "NA",
                  "NA",
@@ -38,6 +41,7 @@ hana_region<-c("US",
                "US",
                "US",
                "US",
+               "UK",
                "UK")
 open_date<-c(as.Date("2019-08-22"),
              as.Date("2019-12-30"),
@@ -47,9 +51,9 @@ open_date<-c(as.Date("2019-08-22"),
              as.Date("2020-10-12"),
              as.Date("2020-09-30"),
              as.Date("2020-09-17"),
+             as.Date("2020-09-30"),
              as.Date("2020-09-30")
              )
-
 unit_local_tz<-c("US/Central",
                   "US/Pacific",
                   "Europe/London",
@@ -58,7 +62,8 @@ unit_local_tz<-c("US/Central",
                   "US/Eastern",
                   "US/Eastern",
                   "US/Eastern",
-                  "Europe/London"
+                  "Europe/London",
+                 "Europe/Berlin"
                   )
 
 
