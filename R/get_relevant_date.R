@@ -1,14 +1,15 @@
-get_relevant_date <-function(date_desc="yesterday")
+get_relevant_date <-function()
 {
 
-  my_date<-dplyr::case_when(
-  date_desc == "yesterday" ~ Sys.Date()-1,
-  date_desc == "start_date"~ lubridate::ceiling_date(Sys.Date()-181, unit="week",week_start = 1),
-  date_desc == "30_days"~ Sys.Date()-31,
-  date_desc == "7_days" ~ Sys.Date()-8,
-  date_desc == "mtd" ~ lubridate::floor_date(Sys.Date()-1, unit="month")
+  relevenant_dates<-tibble::tibble(
+    yesterdays_date = Sys.Date()-1,
+    yoy_date = lubridate::ceiling_date(Sys.Date()-365, unit="week",week_start = 1),
+    past_30_days = Sys.Date()-31,
+    past_7_days =  Sys.Date()-8,
+    month_to_date = lubridate::floor_date(Sys.Date()-1, unit="month")
 )
  
- my_date
+  relevenant_dates
  
 }
+

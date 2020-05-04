@@ -465,9 +465,51 @@ get_hana_meeting_rooms <-
       75
       )
     
+    hourly_price<-c(
+      125,
+      100,
+      125,
+      125,
+      75,
+      100,
+      100,
+      100,
+      75,
+      50,
+      50,
+      50,
+      75,
+      50,
+      100,
+      50,
+      0,
+      75,
+      150,
+      50,
+      75,
+      75,
+      100,
+      75,
+      75,
+      75,
+      100,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      75,
+      75,
+      150,
+      50,
+      75,
+      50
+    )
+    
 
     
-    hana_meeting_rooms<-data.frame(hana_unit,resourceid,room_name,room_id,seating_type,room_type,zoom_room_id, current_room_size,max_density,sq_ftg,stringsAsFactors = FALSE)
+    hana_meeting_rooms<-data.frame(hana_unit,resourceid,room_name,room_id,seating_type,room_type,zoom_room_id, current_room_size,max_density,sq_ftg,hourly_price,stringsAsFactors = FALSE)
     
     hana_meeting_rooms
     

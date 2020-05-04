@@ -5,22 +5,18 @@
 Get Relevant Date
 }
 \description{
-This function returns a date based on a pre-specified timeframe as indicated in the parameter..
+This function returns a tibble of relevant dates used for report generation.
 }
 \usage{
-get_relevant_date(date_desc="yesterday")
+get_relevant_date()
 }
 \arguments{
-  \item{date_desc}{
-A text string that indicates the date required.  valid values include yesterday, start_date,30_days,7_days,mtd.
-}
-
 }
 
 \value{
-A date
+A tibble
 }
 \examples{
 
-month_to_date<-get_relevant_date("mtd")
+hana_dates<-get_relevant_date()
 }
