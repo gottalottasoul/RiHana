@@ -9,6 +9,11 @@ function() {
   color.axis.title = palette[7]
   color.title = palette[9]
   
+  #set our font
+  hana_font_headline <- "Arial"
+  hana_font_body <- "Times New Roman"
+  
+  
   # Begin construction of chart
   theme_bw(base_size=9) +
     
@@ -29,16 +34,19 @@ function() {
     theme(legend.position="none") +
     theme(legend.background = element_rect(fill=color.background)) +
     #    theme(legend.text = element_text(size=7,color=color.axis.title)) +
-    theme(legend.text = element_text(size=5,color=color.axis.title)) +
+    theme(legend.text = element_text(size=5,family=hana_font_body,color=color.axis.title)) +
     
     # Set title and axis labels, and format these and tick marks
     #    theme(plot.title=element_text(color=color.title, size=12, vjust=1.25,hjust = 0.5)) +
-    theme(plot.title=element_text(color=color.title, size=8, vjust=1.25,hjust = 0.5)) +
-    theme(plot.subtitle=element_text(color=color.title, size=10, vjust=1.25,hjust = 0.5)) +
-    theme(axis.text.x=element_text(size=7,color=color.axis.text)) +
-    theme(axis.text.y=element_text(size=7,color=color.axis.text)) +
-    theme(axis.title.x=element_text(size=8,color=color.axis.title, vjust=0)) +
-    theme(axis.title.y=element_text(size=8,color=color.axis.title, vjust=1.25)) +
+    theme(plot.title=element_text(color=color.title, family=hana_font_headline, size=8, vjust=1.25,hjust = 0.5)) +
+    theme(plot.subtitle=element_text(color=color.title,family=hana_font_headline, size=10, vjust=1.25,hjust = 0.5)) +
+    theme(axis.text.x=element_text(family=hana_font_body,size=7,color=color.axis.text)) +
+    theme(axis.text.y=element_text(family=hana_font_body,size=7,color=color.axis.text)) +
+    theme(axis.title.x=element_text(family=hana_font_body,size=8,color=color.axis.title, vjust=0)) +
+    theme(axis.title.y=element_text(family=hana_font_body,size=8,color=color.axis.title, vjust=1.25)) +
     # Plot margins
     theme(plot.margin = unit(c(0.35, 0.2, 0.3, 0.35), "cm"))
 }
+
+
+
