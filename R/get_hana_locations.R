@@ -33,16 +33,46 @@ nex_locations<-c("Park District",
                  "NA",
                  "NA",
                  "NA")
-hana_region<-c("US",
-               "US",
+hana_region<-c("Americas",
+               "Americas",
+               "EMEA",
+               "EMEA",
+               "EMEA",
+               "Americas",
+               "Americas",
+               "Americas",
+               "EMEA",
+               "EMEA")
+hana_subregion<-c("NA",
+               "NA",
                "UK",
                "UK",
                "UK",
-               "US",
-               "US",
-               "US",
+               "NA",
+               "NA",
+               "NA",
                "UK",
-               "UK")
+               "CE")
+hana_city<-c("Dallas",
+               "Irvine",
+               "London",
+               "London",
+               "London",
+               "Philadelphia",
+               "Arlington",
+               "New York",
+               "Manchester",
+               "Berlin")
+hana_submarket<-c("Preston Center",
+               "Irvine",
+               "London",
+               "London",
+               "London",
+               "Market Street West",
+               "Crystal City/Pentagon",
+               "World Financial Center",
+               "Manchester",
+               "Berlin")
 open_date<-c(as.Date("2019-08-22"),
              as.Date("2019-12-30"),
              as.Date("2020-02-24"),
@@ -67,7 +97,7 @@ unit_local_tz<-c("US/Central",
                   )
 
 
-hana_locations<-data.frame(hana_name,hs_locations,nex_locations,hana_region,open_date,unit_local_tz,stringsAsFactors = FALSE)
+hana_locations<-data.frame(hana_name,hs_locations,nex_locations,hana_region,hana_subregion,hana_city,hana_submarket,open_date,unit_local_tz,stringsAsFactors = FALSE)
 
 hana_locations
 
