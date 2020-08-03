@@ -3,10 +3,10 @@ function(num_colors,palette_type=1) {
   
   #hana's color palette
   corp_palette <- c("#002636", #Midnight
-                    "#F4F3F1", #Snowbound
                     "#4C6672", #Tide
                     "#9A502F", #Rust
                     "#617560", #Cypress
+                    "#F4F3F1", #Snowbound
                     "#D2DEE0", #Tide Light
                     "#ECD0BB", #Rust Light
                     "#D7DCCC", #Cypress Light
